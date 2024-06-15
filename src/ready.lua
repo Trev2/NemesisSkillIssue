@@ -21,3 +21,8 @@ end)
 game.OnControlPressed({'Gift', function()
 	return trigger_Gift()
 end})
+
+modutil.mod.path.Wrap("CheckShoppingEventThread", function(base, eventSource, args)
+  CheckShoppingEventThread_Wrap()
+  base( eventSource, args)
+end)
