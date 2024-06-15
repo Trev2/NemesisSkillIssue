@@ -16,8 +16,8 @@
 	--NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
 --end)
 
-game.NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
-game.NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
+game.EnemyData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
+game.EnemyData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
 game.NPCVariantData.NPC_Nemesis_01.NemesisPostRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
 game.NPCVariantData.NPC_Nemesis_01.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
 game.NPCVariantData.NPC_Nemesis_01.NemesisCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
