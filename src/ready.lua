@@ -13,16 +13,19 @@ sjson.hook(file, function(data)
 	return sjson_ShellText(data)
 end)
 
-modutil.mod.Path.Wrap("SetupMap", function(base, ...)
-	prefix_SetupMap()
-	return base(...)
-end)
-
-game.OnControlPressed({'Gift', function()
-	return trigger_Gift()
-end})
-
 modutil.mod.path.Wrap("CheckShoppingEventThread", function(base, eventSource, args)
-  CheckShoppingEventThread_Wrap()
+  CheckShoppingEventThread_Wrap(base, eventSource, args)
   base( eventSource, args)
 end)
+
+modutil.mod.path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
+	NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
+end)
+
+NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
+NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
+NPCVariantData.NPC_Nemesis_01.NemesisPostRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+NPCVariantData.NPC_Nemesis_01.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+NPCVariantData.NPC_Nemesis_01.NemesisCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0

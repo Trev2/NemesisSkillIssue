@@ -14,15 +14,6 @@ function sjson_ShellText(data)
 	end
 end
 
-function prefix_SetupMap()
-	print('Map is loading, here we might load some packages.')
-	-- LoadPackages({Name = package_name_string})
-end
-
-function trigger_Gift()
-	modutil.mod.Hades.PrintOverhead(config.message)
-end
-
 function CheckShoppingEventThread_Wrap(base, eventSource, args)
   if ShoppingNPCId then
     local delay = 3600
@@ -35,5 +26,14 @@ function CheckShoppingEventThread_Wrap(base, eventSource, args)
   end
 end
 
-NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
-NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
+function NemesisPostFieldsCombatCheckExits_Wrap( nemesis, args )
+	args = args or {}
+	wait( args.Delay )
+	local requiredObjects = ShallowCopyTable( MapState.RoomRequiredObjects )
+	requiredObjects[nemesis.ObjectId] = nil
+	if IsEmpty( requiredObjects ) then
+		NemesisTeleportExitPresentation( nemesis, args )
+	else
+		NemesisTeleportExitPresentation( nemesis, args )
+	end
+end
