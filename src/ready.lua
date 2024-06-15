@@ -7,20 +7,14 @@
 -- 	so you will most likely want to have it reference
 --	values and functions later defined in `reload.lua`.
 
-local file = rom.path.combine(rom.paths.Content, 'Game/Text/en/ShellText.en.sjson')
+--modutil.mod.path.Wrap("CheckShoppingEventThread", function(base, eventSource, args)
+  --CheckShoppingEventThread_Wrap(base, eventSource, args)
+  --base( eventSource, args)
+--end)
 
-sjson.hook(file, function(data)
-	return sjson_ShellText(data)
-end)
-
-modutil.mod.path.Wrap("CheckShoppingEventThread", function(base, eventSource, args)
-  CheckShoppingEventThread_Wrap(base, eventSource, args)
-  base( eventSource, args)
-end)
-
-modutil.mod.path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
-	NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
-end)
+--modutil.mod.path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
+	--NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
+--end)
 
 NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
 NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
