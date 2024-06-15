@@ -16,10 +16,10 @@
 	--NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
 --end)
 
-NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
-NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
-NPCVariantData.NPC_Nemesis_01.NemesisPostRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
-NPCVariantData.NPC_Nemesis_01.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
-NPCVariantData.NPC_Nemesis_01.NemesisCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
-NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0
-NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+game.NPCVariantData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
+game.NPCVariantData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
+game.NPCVariantData.NPC_Nemesis_01.NemesisPostRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+game.NPCVariantData.NPC_Nemesis_01.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+game.NPCVariantData.NPC_Nemesis_01.NemesisCombat.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+game.NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0
+game.NPCVariantData.NPC_Nemesis_01.NemesisCombat_G.OutgoingDamageModifiers.NonPlayerMultiplier = 0
