@@ -3,11 +3,11 @@ schemaVersion = "0.0.1"
 
 
 [package]
-namespace = "AuthorName"
-name = "ModName"
-versionNumber = "0.0.0"
-description = "Allows to do some super duper thing."
-websiteUrl = "https://github.com/AuthorName/ModName"
+namespace = "TrevTheModder"
+name = "Nemesis_Skill_Issue"
+versionNumber = "0.1.0"
+description = "Makes Nemesis less annoying during your runs."
+websiteUrl = "https://github.com/Trev2/NemesisSkillIssue"
 containsNsfwContent = false
 
 [package.dependencies]
