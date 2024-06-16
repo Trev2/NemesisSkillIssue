@@ -12,6 +12,11 @@
   --base( eventSource, args)
 --end)
 
+modutil.mod.Path.Wrap("NemesisTakeRoomExit", function(base, eventSource, args)  
+  NemesisTakeroomExit_Wrap(base, eventSource, args)
+  base(eventSource, args)
+end, LoadTest)
+
 --modutil.mod.path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
 	--NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
 --end)
@@ -23,3 +28,4 @@ game.NPCVariantData.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers = 
 game.NPCVariantData.NemesisCombat.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
 game.NPCVariantData.NemesisCombat_G.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
 game.NPCVariantData.NemesisCombat_G.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
+game.EncounterData.BaseNemesisCombat.ExitsUnlockedThreadedEvents = {{FunctionName = "NemesisTeleportExitPresentation", Args = {RandomWaitMin = 1.0,	RandomWaitMax = 3.0}, GameStateRequirements = {ChanceToPlay = 1.0,}}}

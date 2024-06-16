@@ -17,6 +17,20 @@ function CheckShoppingEventThread_Wrap(base, eventSource, args)
   end
 end
 
+function NemesisTakeroomExit_Wrap(base, eventSource, args)
+	local nemesis = SessionMapState.Nemesis
+	if nemesis.Exiting then
+		return
+	end
+
+	UseableOff({ Id = nemesis.ObjectId })
+	nemesis.SpecialInteractFunctionName = nil
+	nemesis.CanReceiveGift = false
+	wait( RandomFloat( args.RandomWaitMin, args.RandomWaitMax ) )
+
+  NemesisTeleportExitPresentation( nemesis, args )
+end
+
 function NemesisPostFieldsCombatCheckExits_Wrap( nemesis, args )
 	args = args or {}
 	wait( args.Delay )
