@@ -7,22 +7,18 @@
 -- 	so you will most likely want to have it reference
 --	values and functions later defined in `reload.lua`.
 
---modutil.mod.path.Wrap("CheckShoppingEventThread", function(base, eventSource, args)
-  --CheckShoppingEventThread_Wrap(base, eventSource, args)
-  --base( eventSource, args)
---end)
-
 modutil.mod.Path.Wrap("NemesisTakeRoomExit", function(base, eventSource, args)  
   NemesisTakeroomExit_Wrap(base, eventSource, args)
   base(eventSource, args)
 end, LoadTest)
 
---modutil.mod.path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
-	--NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
---end)
+modutil.mod.Path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args )
+	NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
+  base(eventSource, args)
+end)
 
---game.EnemyData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
---game.EnemyData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
+game.EnemyData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
+game.EnemyData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
 game.NPCVariantData.NemesisPostRandomEventCombat.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
 game.NPCVariantData.NemesisFieldsPreRandomEventCombat.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
 game.NPCVariantData.NemesisCombat.OutgoingDamageModifiers = {{PlayerMultiplier = 0}, {NonPlayerMultiplier = 0}}
