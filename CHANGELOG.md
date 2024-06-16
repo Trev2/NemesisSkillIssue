@@ -7,6 +7,11 @@ and this project may or may not adhere to [Semantic Versioning](https://semver.o
 
 ## [Unreleased]
 
+## [1.0.0] - 2024-06-16
+
 ### Added
 
 - First version of the mod!
+
+[unreleased]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/Trev2/NemesisSkillIssue/compare/b6659a9717f15de3ccfcbcd244c813d26d80aa77...1.0.0
