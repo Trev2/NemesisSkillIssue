@@ -24,5 +24,9 @@ function NemesisPostFieldsCombatCheckExits_Wrap( nemesis, args )
 	wait( args.Delay )
 	local requiredObjects = ShallowCopyTable( MapState.RoomRequiredObjects )
 	requiredObjects[nemesis.ObjectId] = nil
-	NemesisTeleportExitPresentation( nemesis, args )
+	if IsEmpty( requiredObjects ) then
+		NemesisTeleportExitPresentation( nemesis, args )
+	else
+		NemesisTeleportExitPresentation( nemesis, args )
+	end
 end
