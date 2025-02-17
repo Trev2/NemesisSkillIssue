@@ -6,6 +6,8 @@ The format is allegedly based on [Keep a Changelog](https://keepachangelog.com/e
 
 ## [Unreleased]
 
+## [1.0.3] - 2025-02-17
+
 ## [1.0.2] - 2025-02-16
 
 ## [1.0.1] - 2024-06-17
@@ -16,7 +18,8 @@ The format is allegedly based on [Keep a Changelog](https://keepachangelog.com/e
 
 - First version of the mod!
 
-[unreleased]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.2...HEAD
+[unreleased]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/Trev2/NemesisSkillIssue/compare/b6659a9717f15de3ccfcbcd244c813d26d80aa77...1.0.0
