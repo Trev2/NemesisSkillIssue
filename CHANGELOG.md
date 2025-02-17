@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 The format is allegedly based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project may or may not adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) depending on how stupid I am when I upload.
 
+## [Unreleased]
+
 ## [1.0.3] - 2025-02-17
 
 - Second attempt to fix post-Fields combat crash.
