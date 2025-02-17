@@ -7,15 +7,10 @@
 -- 	so you will most likely want to have it reference
 --	values and functions later defined in `reload.lua`.
 
-modutil.mod.Path.Wrap("NemesisTakeRoomExit", function(base, eventSource, args))
+modutil.mod.Path.Wrap("NemesisTakeRoomExit", function(base, eventSource, args)
   NemesisTakeroomExit_Wrap(base, eventSource, args)
   base(eventSource, args)
-end, LoadTest
-
-modutil.mod.Path.Wrap("NemesisPostFieldsCombatCheckExits", function(base, nemesis, args ))
-  NemesisPostFieldsCombatCheckExits_Wrap(base, nemesis, args)
-  base(eventSource, args)
-end
+end, LoadTest)
 
 game.EnemyData.NPC_Nemesis_01.ShopEventData.InstantChance = 0
 game.EnemyData.NPC_Nemesis_01.ShopEventData.NeverChance = 1
