@@ -18,11 +18,3 @@ function NemesisTakeroomExit_Wrap(base, eventSource, args)
 
   NemesisTeleportExitPresentation( nemesis, args )
 end
-
-function NemesisPostFieldsCombatCheckExits_Wrap( nemesis, args )
-	args = args or {}
-	wait( args.Delay )
-	local requiredObjects = ShallowCopyTable( MapState.RoomRequiredObjects )
-	requiredObjects[nemesis.ObjectId] = nil
-	NemesisTeleportExitPresentation( nemesis, args )
-end
