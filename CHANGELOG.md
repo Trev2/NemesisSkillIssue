@@ -6,6 +6,8 @@ The format is allegedly based on [Keep a Changelog](https://keepachangelog.com/e
 
 ## [Unreleased]
 
+## [1.0.4] - 2025-02-17
+
 ## [1.0.3] - 2025-02-17
 
 - Second attempt to fix post-Fields combat crash.
@@ -22,7 +24,8 @@ The format is allegedly based on [Keep a Changelog](https://keepachangelog.com/e
 
 - First version of the mod!
 
-[unreleased]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.3...HEAD
+[unreleased]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.4...HEAD
+[1.0.4]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/Trev2/NemesisSkillIssue/compare/1.0.0...1.0.1
